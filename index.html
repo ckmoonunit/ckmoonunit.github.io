@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrick Knight — Automation Engineer | NX Open &amp; BIM Pipelines</title>
+  <meta name="description" content="I build automation systems that make complex engineering software work together — so engineers can stop doing the same thing twice and start doing actual engineering.">
+  <meta property="og:title" content="Corrick Knight — Automation Engineer | NX Open &amp; BIM Pipelines">
+  <meta property="og:description" content="Automation engineer with 10+ years bridging mechanical engineering and software — NX Open API, BIM pipeline orchestration, PowerShell/WinForms.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Corrick Knight — home">CK</a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero">
+      <div class="container">
+        <h1 class="mono hero-name">CORRICK KNIGHT</h1>
+        <p class="hero-subtitle">Automation Engineer&thinsp;·&thinsp;NX Open API&thinsp;·&thinsp;BIM Pipeline Orchestration</p>
+        <p class="hero-bio">
+          I build automation systems that make complex engineering software<br>
+          work together — so engineers can stop doing the same thing twice<br>
+          and start doing actual engineering.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">See the work →</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch →</a>
+        </div>
+        <p class="hero-byline mono">
+          10+ years&nbsp;·&nbsp;Tekla&nbsp;·&nbsp;Revit&nbsp;·&nbsp;SmartPlant 3D&nbsp;·&nbsp;Navisworks&nbsp;·&nbsp;AutoCAD&nbsp;·&nbsp;NX&nbsp;·&nbsp;Teamcenter
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ SELECTED WORK ═══ -->
+    <section id="work" class="fade-section">
+      <div class="container">
+        <h2 class="section-heading mono">Selected Work</h2>
+
+        <div class="work-card">
+          <div class="work-header">
+            <h3>Bechtel National Inc.</h3>
+            <p class="work-meta mono">Automation Engineer&nbsp;·&nbsp;2022 – Present&nbsp;·&nbsp;Ogden, UT (Remote)</p>
+          </div>
+          <p class="work-summary">
+            Architect and operator of a PowerShell/WinForms orchestration platform that coordinates nightly automated exports, format conversions, and model health checks across Tekla, Revit, SmartPlant 3D, Navisworks, AutoCAD, iConstruct, and PlantSight — running unattended via service accounts across multiple project servers.
+          </p>
+          <ul class="work-bullets">
+            <li>Designed a modular application with a self-locating JSON config (<code>paths.json</code>) for one-touch multi-project deployment, plus a live dashboard for flow status, server health, and file health monitoring.</li>
+            <li>Built NX Open automation to convert Revit, Tekla, S3D, and AutoCAD models into NX format with programmatic attribute and property import from external databases — preserving full data fidelity across the BIM-to-NX pipeline.</li>
+            <li>Resolved a critical Tekla IFC tessellation defect in circular-profile exports; the fix was adopted as a project-wide modeling standard.</li>
+            <li>Developed AutoCAD LSP automation that imports and applies dated ARG profiles on startup via the COM API, deployed firm-wide via a batch script writing <code>TRUSTEDPATHS</code> registry keys.</li>
+            <li>Collaborated with U.S. Air Force and Northrop Grumman teams to align BIM deliverable standards and automate model handoff workflows.</li>
+          </ul>
+        </div>
+
+        <div class="work-card">
+          <div class="work-header">
+            <h3>JBT AeroTech</h3>
+            <p class="work-meta mono">Mechanical Engineer 3 → Engineer Lead&nbsp;·&nbsp;2016 – 2022&nbsp;·&nbsp;Ogden, UT</p>
+          </div>
+          <p class="work-summary">
+            Designed, built, and deployed a suite of 17 NX Open production applications in C# and VB.NET spanning the entire engineering drawing lifecycle. Department-wide efficiency gain: <strong class="accent">25%</strong>.
+          </p>
+          <ul class="work-bullets">
+            <li>The suite covered drawing creation, BOM and parts-list generation, drawing-standards validation and auto-correction, callout QA against the BOM, batch DWG/PDF/STEP export, part property management, zone-block referencing, and automated migration of legacy drawings to current company format.</li>
+            <li>Promoted to Engineer Lead within two years; managed five concurrent HVAC, diesel generator, and Jetpower programs, supervising designers and drafters.</li>
+            <li>Coordinated assembly, integration, and testing of aerospace ground support equipment with Production, Purchasing, Technical Publications, Field Services, and customers.</li>
+            <li>Designed mechanical systems, sheet metal, structural frames, control boxes, and circuit card racks; performed structural and thermal analysis with full technical documentation.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ FEATURED PROJECT ═══ -->
+    <section id="projects" class="fade-section">
+      <div class="container">
+        <h2 class="section-heading mono">Featured Project</h2>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>AutomationInator</h3>
+            <p class="work-meta mono">Enterprise BIM workflow orchestration&nbsp;·&nbsp;2024 – Present&nbsp;·&nbsp;Bechtel</p>
+          </div>
+
+          <div class="project-body">
+
+            <div class="project-block">
+              <h4 class="mono">The Problem</h4>
+              <p>Multi-site BIM projects require constant exports, format conversions, and health checks across half a dozen disconnected enterprise CAD platforms. The default workflow is manual, error-prone, license-hungry (every user needs every seat), and doesn't scale past a handful of sites.</p>
+            </div>
+
+            <div class="project-block">
+              <h4 class="mono">What It Is</h4>
+              <p>AutomationInator is a multi-software orchestration platform that runs the entire pipeline unattended on Windows service accounts. A manager clicks one button; exports, conversions, and copies run overnight across multiple VMs and report back when they're done.</p>
+            </div>
+
+            <div class="stats-grid" role="list" aria-label="Project statistics">
+              <div class="stat" role="listitem">
+                <span class="stat-number mono">7+</span>
+                <span class="stat-label">CAD platforms orchestrated</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-number mono">1</span>
+                <span class="stat-label">service-account license per VM (vs. per-user)</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-number mono">450</span>
+                <span class="stat-label">sites the architecture scales to (project-wide capacity)</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-number mono">25K+</span>
+                <span class="stat-label">lines of PowerShell (V1 + V2)</span>
+              </div>
+            </div>
+
+            <div class="project-block">
+              <h4 class="mono">Highlights</h4>
+              <ul class="work-bullets">
+                <li><strong>V1</strong> built solo in Notepad with pipe-delimited config files; deployed and running unattended at multiple Bechtel sites.</li>
+                <li><strong>V2</strong> is a full PowerShell + WinForms rewrite: dark-themed single-form UI, modular page architecture (Dashboard, Flows, Server Health, File Health, Setup, Options), self-locating <code>paths.json</code> config, structured JSON logging, live heartbeat monitoring.</li>
+                <li>Coordinates Tekla, Revit, SmartPlant 3D, Navisworks, AutoCAD, iConstruct, and PlantSight via service-account execution on multiple Windows VMs.</li>
+                <li>Solved real infrastructure problems along the way: DCOM configuration for service-account COM access, Session 0 process isolation, SPIOP/Intergraph Batch Manager license behavior, <code>Roamer.exe</code> batch invocation for Navisworks NWD exports, and SQL Server permissions for service accounts.</li>
+                <li>Designed for replication: drop in a new project, edit one JSON file, deploy.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="fade-section">
+      <div class="container">
+        <h2 class="section-heading mono">Skills &amp; Stack</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title mono">NX Open &amp; PLM</h3>
+            <p>Siemens NX Open API (C# / VB.NET) · Teamcenter PLM · programmatic drawing creation · BOM and parts-list automation · batch DWG/PDF/STEP export · drawing-standards validation · legacy-format migration · sheet metal setup · callout-to-BOM QA</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title mono">BIM &amp; CAD Platforms</h3>
+            <p>Tekla Structures · Revit API · SmartPlant 3D · Navisworks · AutoCAD (LSP / COM) · iConstruct · PlantSight · SolidWorks · Solid Edge · OnShape</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title mono">Automation &amp; Languages</h3>
+            <p>PowerShell · Batch · C# · C++ · VB.NET · VBScript · COM API · MATLAB</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title mono">Pipeline &amp; Integration</h3>
+            <p>IFC export / conversion · unattended job orchestration · service-account execution · multi-site model delivery · structured JSON logging · heartbeat monitoring</p>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title mono">Infrastructure</h3>
+            <p>Windows Server · DCOM configuration · registry scripting · network-share management · WinForms GUI · self-hosted Windows services</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="fade-section">
+      <div class="container">
+        <h2 class="section-heading mono">About</h2>
+        <div class="about-content">
+          <p>I'm an automation engineer with 10+ years bridging mechanical engineering and software. I started at JBT AeroTech building NX Open automation that took a 25% bite out of department drawing time, then moved to Bechtel to wire together the BIM stack across multi-site capital projects.</p>
+          <p>The throughline: I'm comfortable in the CAD environment, in the Windows infrastructure underneath it, and in everything in between — APIs, COM, service accounts, license boundaries, the actual messy plumbing. Most automation engineers do one or two of those well. I've had to do all of them to ship.</p>
+          <p>BS Mechanical Engineering, Mathematics minor, Utah State University. FE passed. Utah General Contractor's License (because I also restored an 80-year-old house, which is a different kind of debugging). <span class="mono about-aside">All-American Wrestler · 4× All-State.</span></p>
+          <p>Outside work: three kids, CrossFit, hot yoga, skiing, west coast swing, and a yard full of fruit trees and berries that don't care about my deadlines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="fade-section">
+      <div class="container">
+        <h2 class="section-heading mono">Let's Talk</h2>
+        <div class="contact-content">
+          <div class="contact-links">
+            <a href="mailto:knightcorrick@gmail.com" class="contact-link">
+              <span class="mono contact-label">Email</span>
+              <span>knightcorrick@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="mono contact-label">LinkedIn</span>
+              <span>linkedin.com/in/YOUR-LINKEDIN-HANDLE</span>
+            </a>
+            <a href="https://github.com/ckmoonunit" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="mono contact-label">GitHub</span>
+              <span>github.com/ckmoonunit</span>
+            </a>
+          </div>
+          <div class="contact-roles">
+            <p class="mono">Currently exploring roles in:</p>
+            <p>Automation Engineering&nbsp;·&nbsp;Digital Delivery&nbsp;·&nbsp;NX Open Development&nbsp;·&nbsp;BIM Pipeline / Technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="mono">© 2026 Corrick Knight&nbsp;·&nbsp;Built with HTML/CSS&nbsp;·&nbsp;Last updated May 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
